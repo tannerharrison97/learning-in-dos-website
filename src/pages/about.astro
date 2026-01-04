@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us">
+  <div class="container">
+    <header class="page-header">
+      <h1>About Us</h1>
+      <p>Two English-speaking parents on a Spanish-speaking mission</p>
+    </header>
+
+    <div class="content">
+      <section class="card">
+        <h2>Our Story</h2>
+        <p>
+          We're a family based in [your area] who decided to raise our kids speaking Spanish—even though neither of us are native speakers. It started as an experiment and turned into a passion.
+        </p>
+        <p>
+          We know firsthand how challenging (and rewarding!) it can be to create a bilingual environment when Spanish isn't your first language. That's why we started Learning in Dos: to share what we've learned and connect with other families on the same journey.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>What We Do</h2>
+        <ul>
+          <li><strong>Blog:</strong> We share our experiences, tips, and resources for raising bilingual kids as non-native speakers.</li>
+          <li><strong>Play Groups:</strong> We organize Spanish-speaking play dates and activities in our community.</li>
+          <li><strong>Community:</strong> We run a WhatsApp group where families can connect, share wins, ask questions, and support each other.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Join Our Community</h2>
+        <p>
+          Want to connect with other families raising bilingual kids? Join our WhatsApp group! It's a supportive space for sharing resources, arranging play dates, and celebrating those small wins (like when your toddler finally says "agua" instead of "water").
+        </p>
+        <p>
+          <em>Contact us to get the invite link!</em>
+        </p>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    color: var(--gray);
+    font-size: 1.1rem;
+  }
+
+  .content {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .card h2 {
+    color: var(--blue);
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    margin-bottom: 1rem;
+  }
+
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card ul {
+    padding-left: 1.25rem;
+  }
+
+  .card li {
+    margin-bottom: 0.75rem;
+  }
+</style>
+
