@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: tannerharrison97/learning-in-dos-website
+  name: git-gateway
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth/done
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
