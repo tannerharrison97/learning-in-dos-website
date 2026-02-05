@@ -15,8 +15,8 @@ const recentPosts = allPosts
       <h1>Raising Bilingual Kids, Together</h1>
       <p>We're two English-speaking parents raising our kids to speak Spanish. Join us as we share our journey, tips, and community resources.</p>
       <div class="hero-buttons">
-        <a href="/blog" class="btn btn-primary">Read Our Blog</a>
-        <a href="/about" class="btn btn-secondary">About Us</a>
+        <a href="/playgroups" class="btn btn-primary">Join a Play Group</a>
+        <a href="/blog" class="btn btn-secondary">Read Our Blog</a>
       </div>
     </div>
   </section>
@@ -24,17 +24,17 @@ const recentPosts = allPosts
   <section class="features">
     <div class="container">
       <div class="features-grid">
-        <div class="card">
-          <h3>📝 Our Blog</h3>
-          <p>Real stories and practical tips from our bilingual parenting journey.</p>
-        </div>
-        <div class="card">
+        <a href="/playgroups" class="card card-link">
           <h3>👨‍👩‍👧‍👦 Play Groups</h3>
           <p>Connect with other families in our Spanish-speaking play groups.</p>
-        </div>
+        </a>
+        <a href="/blog" class="card card-link">
+          <h3>📝 Our Blog</h3>
+          <p>Real stories and practical tips from our bilingual parenting journey.</p>
+        </a>
         <div class="card">
           <h3>🎯 Resources</h3>
-          <p>Books, apps, and activities that work for non-native speakers.</p>
+          <p>Coming Soon!</p>
         </div>
       </div>
     </div>
@@ -146,5 +146,16 @@ const recentPosts = allPosts
   .post-card p {
     color: var(--gray);
     font-size: 0.95rem;
+  }
+
+  .card-link {
+    display: block;
+    color: inherit;
+    transition: transform 0.2s;
+  }
+
+  .card-link:hover {
+    transform: translateY(-4px);
+    text-decoration: none;
   }
 </style>

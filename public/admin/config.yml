@@ -17,3 +17,21 @@ collections:
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "playgroups"
+    label: "Play Groups"
+    folder: "src/content/playgroups"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", hint: "What happens at this group? What's the vibe?" }
+      - { label: "Schedule", name: "schedule", widget: "string", hint: "e.g., 'Every Wednesday 10am' or 'Second Saturday of each month'" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Age Range", name: "ageRange", widget: "select", options: ["All ages", "Babies (0-1)", "Toddlers (1-3)", "Preschool (3-5)", "School age (5+)", "Mixed ages"] }
+      - { label: "WhatsApp Invite Link", name: "whatsappLink", widget: "string", required: false, hint: "e.g., https://chat.whatsapp.com/abc123" }
+      - { label: "How to Join (Additional Info)", name: "howToJoin", widget: "text", required: false, hint: "Any extra instructions, e.g., 'Message Sarah first'" }
+      - { label: "Next Meetup Date", name: "nextMeetupDate", widget: "datetime", required: false, hint: "When is the next meetup?" }
+      - { label: "Next Meetup Notes", name: "nextMeetupNotes", widget: "string", required: false, hint: "Any special activity or notes for the next meetup" }
+      - { label: "Active", name: "active", widget: "boolean", default: true, hint: "Uncheck to hide this group from the website" }
+      - { label: "Details", name: "body", widget: "markdown", required: false, hint: "Any additional details about the group" }
