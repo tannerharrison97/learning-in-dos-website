@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: tannerharrison97/learning-in-dos-website
   branch: main
-
-# For local development, uncomment this:
-# local_backend: true
+  base_url: https://api.netlify.com
+  auth_endpoint: auth/done
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
@@ -20,4 +20,3 @@ collections:
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-
