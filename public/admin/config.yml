@@ -31,7 +31,7 @@ collections:
       - { label: "Age Range", name: "ageRange", widget: "select", options: ["All ages", "Babies (0-1)", "Toddlers (1-3)", "Preschool (3-5)", "School age (5+)", "Mixed ages"] }
       - { label: "WhatsApp Invite Link", name: "whatsappLink", widget: "string", required: false, hint: "e.g., https://chat.whatsapp.com/abc123" }
       - { label: "How to Join (Additional Info)", name: "howToJoin", widget: "text", required: false, hint: "Any extra instructions, e.g., 'Message Sarah first'" }
-      - { label: "Next Meetup Date", name: "nextMeetupDate", widget: "datetime", required: false, hint: "When is the next meetup?" }
+      - { label: "Next Meetup", name: "nextMeetup", widget: "string", required: false, hint: "e.g., 'Wednesday, Feb 12 at 10:00 AM'" }
       - { label: "Next Meetup Notes", name: "nextMeetupNotes", widget: "string", required: false, hint: "Any special activity or notes for the next meetup" }
       - { label: "Active", name: "active", widget: "boolean", default: true, hint: "Uncheck to hide this group from the website" }
       - { label: "Details", name: "body", widget: "markdown", required: false, hint: "Any additional details about the group" }

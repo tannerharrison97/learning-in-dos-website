@@ -40,18 +40,10 @@ const activeGroups = allGroups.filter(group => group.data.active);
                 </div>
               </div>
 
-              {group.data.nextMeetupDate && (
+              {group.data.nextMeetup && (
                 <div class="next-meetup">
                   <h3>Next Meetup</h3>
-                  <p class="meetup-date">
-                    {new Date(group.data.nextMeetupDate).toLocaleDateString('en-US', { 
-                      weekday: 'long', 
-                      month: 'long', 
-                      day: 'numeric',
-                      hour: 'numeric',
-                      minute: '2-digit'
-                    })}
-                  </p>
+                  <p class="meetup-date">{group.data.nextMeetup}</p>
                   {group.data.nextMeetupNotes && (
                     <p class="meetup-notes">{group.data.nextMeetupNotes}</p>
                   )}

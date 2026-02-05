@@ -20,7 +20,7 @@ const playgroups = defineCollection({
     ageRange: z.enum(['All ages', 'Babies (0-1)', 'Toddlers (1-3)', 'Preschool (3-5)', 'School age (5+)', 'Mixed ages']),
     whatsappLink: z.string().url().nullish(),
     howToJoin: z.string().optional(),
-    nextMeetupDate: z.coerce.date().optional(),
+    nextMeetup: z.string().optional(),
     nextMeetupNotes: z.string().optional(),
     active: z.boolean().default(true),
   }),
